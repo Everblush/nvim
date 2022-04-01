@@ -18,9 +18,9 @@ function M.get_colors()
     color9 = "#ef7d7d",
     color10 = "#9bdead",
     color11 = "#f4d67a",
-    color12 = "#6cb5ed",
+    color12 = "#ef7d7d",
     color13 = "#ce89df",
-    color14 = "#67cbe7",
+    color14 = "#ef7d7d",
     color15 = "#bdc3c2",
   }
 end

@@ -34,7 +34,7 @@ M.highlights_base = function (colors)
     WarningMsg = { guifg = colors.color3, guibg = colors.background },
     DiffAdd = { guifg = colors.background, guibg = colors.color4 },
     DiffChange = { guifg = colors.background, guibg = colors.color5 },
-    DiffDelete = { guifg = colors.background, guibg = colors.color11 },
+    DiffDelete = { guifg = colors.background, guibg = colors.color1 },
     QuickFixLine = { guibg = colors.color2 },
     PmenuSbar = { guibg = colors.background },
     PmenuThumb = { guibg = colors.color2 },
@@ -48,9 +48,9 @@ M.highlights_base = function (colors)
     Directory = { guifg = colors.color4 },
     SpecialKey = { guifg = colors.color4 },
     Title = { guifg = colors.color4 },
-    ErrorMsg = { guifg = colors.color11, guibg = colors.background },
-    Search = { guifg = colors.background, guibg = colors.color2 },
-    IncSearch = { guifg = colors.background, guibg = colors.color2 },
+    ErrorMsg = { guifg = colors.color1, guibg = colors.background },
+    Search = { guifg = colors.background, guibg = colors.color10 },
+    IncSearch = { guifg = colors.background, guibg = colors.color10 },
     Substitute = { guifg = colors.color3, guibg = colors.color6 },
     MoreMsg = { guifg = colors.color5 },
     Question = { guifg = colors.color5 },
@@ -84,12 +84,12 @@ M.highlights_base = function (colors)
     Special = { guifg = colors.color6 },
     SpecialChar = { guifg = colors.foreground },
     Tag = { guifg = colors.color4 },
-    Debug = { guifg = colors.color11 },
+    Debug = { guifg = colors.color1 },
     Delimiter = { guifg = colors.foreground },
     SpecialComment = { guifg = colors.color2 },
     Ignore = { guifg = colors.color7, guibg = colors.background },
-    Todo = { guifg = colors.color11, guibg = colors.background },
-    Error = { guifg = colors.color11, guibg = colors.background },
+    Todo = { guifg = colors.color1, guibg = colors.background },
+    Error = { guifg = colors.color1, guibg = colors.background },
     TabLine = { guifg = colors.color2, guibg = colors.background },
     TabLineSel = { guifg = colors.foreground, guibg = colors.background },
     TabLineFill = { guifg = colors.foreground, guibg = colors.background },
@@ -153,7 +153,7 @@ M.highlights_base = function (colors)
     -- TSSymbol            = { };    -- For identifiers referring to symbols or atoms.
     -- TSType              = { };    -- For types.
     -- TSTypeBuiltin       = { };    -- For builtin types.
-    TSVariableBuiltin = { guifg = colors.color11 }, -- Variable names that are defined by the languages, like `this` or `self`.
+    TSVariableBuiltin = { guifg = colors.color1 }, -- Variable names that are defined by the languages, like `this` or `self`.
 
     -- TSTag               = { };    -- Tags like html tag names.
     -- TSTagDelimiter      = { };    -- Tag delimiter like `<` `>` `/`
@@ -177,7 +177,7 @@ M.highlights_base = function (colors)
 
     -- diff
     diffAdded = { guifg = colors.color4 },
-    diffRemoved = { guifg = colors.color11 },
+    diffRemoved = { guifg = colors.color1 },
     diffChanged = { guifg = colors.color5 },
     diffOldFile = { guifg = colors.color5 },
     diffNewFile = { guifg = colors.color5 },
@@ -191,18 +191,18 @@ M.highlights_base = function (colors)
     NeogitHunkHeader = { guibg = colors.background, guifg = colors.foreground },
     NeogitHunkHeaderHighlight = { guibg = colors.foreground, guifg = colors.color7 },
     NeogitDiffContextHighlight = { guibg = colors.background, guifg = colors.foreground },
-    NeogitDiffDeleteHighlight = { guifg = colors.color11, guibg = colors.color11 },
+    NeogitDiffDeleteHighlight = { guifg = colors.color1, guibg = colors.color1 },
     NeogitDiffAddHighlight = { guifg = colors.color4, guibg = colors.color4 },
 
     -- GitGutter
     GitGutterAdd = { guifg = colors.color4 }, -- diff mode: Added line |diff.txt|
     GitGutterChange = { guifg = colors.color5 }, -- diff mode: Changed line |diff.txt|
-    GitGutterDelete = { guifg = colors.color11 }, -- diff mode: Deleted line |diff.txt|
+    GitGutterDelete = { guifg = colors.color1 }, -- diff mode: Deleted line |diff.txt|
 
     -- GitSigns
     GitSignsAdd = { guifg = colors.color4 }, -- diff mode: Added line |diff.txt|
     GitSignsChange = { guifg = colors.color5 }, -- diff mode: Changed line |diff.txt|
-    GitSignsDelete = { guifg = colors.color11 }, -- diff mode: Deleted line |diff.txt|
+    GitSignsDelete = { guifg = colors.color1 }, -- diff mode: Deleted line |diff.txt|
 
     -- Telescope
     TelescopeBorder = { guifg = colors.color0, guibg = colors.background },
@@ -218,12 +218,15 @@ M.highlights_base = function (colors)
     NvimTreeRootFolder = { guifg = colors.color1 },
     NvimTreeGitDirty = { guifg = colors.color5 },
     NvimTreeGitNew = { guifg = colors.color4 },
-    NvimTreeGitDeleted = { guifg = colors.color11 },
+    NvimTreeGitDeleted = { guifg = colors.color1 },
     NvimTreeSpecialFile = { guifg = colors.color6 },
     NvimTreeIndentMarker = { guifg = colors.color0 },
     NvimTreeImageFile = { guifg = colors.foreground },
     NvimTreeSymlink = { guifg = colors.color7 },
     NvimTreeFolderIcon = { guifg = colors.color2, guibg = colors.background },
+    NvimTreeFolderName = { guifg = colors.color2 },
+    NvimTreeOpenedFolderName = { guifg = colors.color2 },
+    NvimTreeEmptyFolderName = { guifg = colors.color2 },
     NvimTreeStatusLineNC = { guibg = colors.background, guifg = colors.background },
 
     -- LspSaga
@@ -237,7 +240,7 @@ M.highlights_base = function (colors)
     LspSagaFinderSelection = { guifg = colors.color1 },
     LspSagaCodeActionTitle = { guifg = colors.color7 },
     LspSagaCodeActionContent = { guifg = colors.color6 },
-    LspSagaSignatureHelpBorder = { guifg = colors.color11 },
+    LspSagaSignatureHelpBorder = { guifg = colors.color1 },
     ReferencesCount = { guifg = colors.color6 },
     DefinitionCount = { guifg = colors.color6 },
     DefinitionIcon = { guifg = colors.color7 },
@@ -245,7 +248,7 @@ M.highlights_base = function (colors)
     TargetWord = { guifg = colors.color7 },
 
     -- NeoVim
-    healthError = { guifg = colors.color11 },
+    healthError = { guifg = colors.color1 },
     healthSuccess = { guifg = colors.color4 },
     healthWarning = { guifg = colors.color5 },
 
