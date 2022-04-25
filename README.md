@@ -1,6 +1,6 @@
 # everblush.nvim
 
-everblush.nvim is a beautiful, dark and cleaner colorscheme based in the colorscheme showed in the rxyhn dotfiles
+everblush.nvim is a port of everblush.vim but written in lua 
 
 > ** IMPORTANT NOTE **: You need the latest version of neovim to use this, because this is totally written in lua!
 
