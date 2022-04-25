@@ -223,7 +223,7 @@ M.highlights_base = function (colors)
     NvimTreeIndentMarker = { guifg = colors.color0 },
     NvimTreeImageFile = { guifg = colors.foreground },
     NvimTreeSymlink = { guifg = colors.color7 },
-    NvimTreeFolderIcon = { guifg = colors.color2, guibg = colors.background },
+    NvimTreeFolderIcon = { guifg = colors.color4, guibg = colors.background },
     NvimTreeFolderName = { guifg = colors.foreground },
     NvimTreeOpenedFolderName = { guifg = colors.color2 },
     NvimTreeEmptyFolderName = { guifg = colors.color2 },
