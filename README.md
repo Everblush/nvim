@@ -1,4 +1,14 @@
-# everblush.nvim
+<h2 align="center">Neovim Lua Colorscheme</h2>
+<p>
+<h4 align="center" <i>Everblush Lua Port for Neovim</i></h4>
+</p>
+
+ <p align="center">
+<img src="https://img.shields.io/github/stars/Everblush/everblush.nvim?colo
+r=e5c76b&labelColor=22292b&style=for-the-badge">
+<img src="https://img.shields.io/static/v1?label=license&message=MIT&color=8ccf7e&labelColor=22292b&style=for-the-badge">
+<img src="https://img.shields.io/github/forks/Everblush/everblush.nvim?color=e74c4c&labelColor=1b2224&style=for-the-badge">
+</p>
 
 everblush.nvim is a port of everblush.vim but written in lua 
 
@@ -78,3 +88,6 @@ If you want to get the colors into a lua dictionary
 local everblush = require('everblush.core')
 local colors = everblush.get_colors()
 ```
+
+## Credits 💝
+- [AlphaTechnolog](https://github.com/AlphaTechnolog).
