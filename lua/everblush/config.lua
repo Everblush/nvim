@@ -143,7 +143,7 @@ M.highlights_base = function (colors)
     TSTagDelimiter = { fg = colors.color7 },
     TSText = { fg = colors.color7 },
     TSStrong = { fg = colors.color7 },
-    TSEmphasis = { fg = colors.color7 }, -- italic
+    TSEmphasis = { italic = true, fg = colors.color7 },
     TSUnderline = { fg = colors.color5 },
     TSStrike = { fg = colors.color7 },
     TSTitle = { fg = colors.color3 },
