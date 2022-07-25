@@ -90,3 +90,4 @@ local colors = everblush.get_colors()
 
 ## Credits 💝
 - [AlphaTechnolog](https://github.com/AlphaTechnolog).
+- [pluffie](https://github.com/pluffie).
