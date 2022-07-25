@@ -102,69 +102,64 @@ M.highlights_base = function (colors)
     CmpItemMenu = { guifg = colors.color2, guibg = colors.background },
 
     -- treesitter
-
-    -- These groups are for the neovim tree-sitter highlights.
-    -- As of writing, tree-sitter support is a WIP, group names may color5.
-    -- By default, most of these groups link to an appropriate Vim group,
-    -- TSError -> Error for example, so you do not have to define these unless
-    -- you explicitly want to support Treesitter's improved syntax awareness.
-
-    -- TSAnnotation        = { };    -- For C++/Dart attributes, annotations that can be attached to the code to denote some kind of meta information.
-    -- TSAttribute         = { };    -- (unstable) TODO: docs
-    -- TSBoolean           = { };    -- For booleans.
-    -- TSCharacter         = { };    -- For characters.
-    -- TSComment           = { };    -- For color1 blocks.
-    TSNote = { guifg = colors.background, guibg = colors.color5 },
-    TSComment = { guifg = colors.color0 },
-    TSWarning = { guifg = colors.background, guibg = colors.color5 },
-    TSDanger = { guifg = colors.background, guibg = colors.color3 },
-    TSConstructor = { guifg = colors.color6 }, -- For constructor calls and definitions: `= { }` in Lua, and Java constructors.
-    -- TSConditional       = { };    -- For keywords related to conditionnals.
-    -- TSConstant          = { };    -- For constants
-    -- TSConstBuiltin      = { };    -- For constant that are built in the language: `nil` in Lua.
-    -- TSConstMacro        = { };    -- For constants that are defined by macros: `NULL` in C.
-    -- TSError             = { };    -- For syntax/parser errors.
-    -- TSException         = { };    -- For exception related keywords.
-    TSField = { guifg = colors.color12 }, -- For fields.
-    -- TSFloat             = { };    -- For floats.
-    -- TSFunction          = { };    -- For function (calls and definitions).
-    -- TSFuncBuiltin       = { };    -- For builtin functions: `table.insert` in Lua.
-    -- TSFuncMacro         = { };    -- For macro defined fuctions (calls and definitions): each `macro_rules` in Rust.
-    -- TSInclude           = { };    -- For includes: `#include` in C, `use` or `extern crate` in Rust, or `require` in Lua.
-    TSKeyword = { guifg = colors.color6 }, -- For keywords that don't fall in previous categories.
-    TSKeywordFunction = { guifg = colors.color6 }, -- For keywords used to define a fuction.
-    TSLabel = { guifg = colors.color7 }, -- For labels: `label:` in C and `:label:` in Lua.
-    -- TSMethod            = { };    -- For method calls and definitions.
-    -- TSNamespace         = { };    -- For identifiers referring to modules and namespaces.
-    -- TSNone              = { };    -- TODO: docs
+    TSAttribute = { guifg = colors.color4 },
+    TSBoolean = { guifg = colors.color6 },
+    TSCharacter = { guifg = colors.color4 },
+    TSComment = { guifg = colors.comment },
+    TSConditional = { guifg = colors.color1 },
+    TSConstant = { guifg = colors.color6 },
+    TSConstBuiltin = { guifg = colors.color4 },
+    TSConstMacro = { guifg = colors.color3 },
+    TSConstructor = { guifg = colors.color4 },
+    TSException = { guifg = colors.color8 },
+    TSField = { guifg = colors.color1 },
+    TSFloat = { guifg = colors.color8 },
+    TSFunction = { guifg = colors.color1 },
+    TSFuncBuiltin = { guifg = colors.color14 },
+    TSFuncMacro = { guifg = colors.color2 },
+    TSInclude = { guifg = colors.color9 },
+    TSKeyword = { guifg = colors.color5 },
+    TSKeywordFunction = { guifg = colors.color4 },
+    TsKeywordOperator = { guifg = colors.color12 },
+    TSKeywordReturn = { guifg = colors.color4 },
+    TSLabel = { guifg = colors.color4 },
+    TSMethod = { guifg = colors.color12 },
+    TSNamespace = { guifg = colors.color9 },
     TSNumber = { guifg = colors.color3 },
-    TSOperator = { guifg = colors.color7 }, -- For any operator: `+`, but also `->` and `*` in C.
-    TSParameter = { guifg = colors.color5 }, -- For parameters of a function.
-    -- TSParameterReference= { };    -- For references to parameters of a function.
-    TSProperty = { guifg = colors.color4 }, -- Same as `TSField`.
-    TSPunctDelimiter = { guifg = colors.color7 }, -- For delimiters ie: `.`
-    TSPunctBracket = { guifg = colors.foreground }, -- For brackets and parens.
-    TSPunctSpecial = { guifg = colors.color7 }, -- For special punctutation that does not fall in the catagories before.
-    -- TSRepeat            = { };    -- For keywords related to loops.
-    TSRepeat = { guifg = colors.color5 },
+    TSParameter = { guifg = colors.color1 },
+    TSParameterReference = { guifg = colors.color9 },
+    TSProperty = { guifg = colors.color1 },
+    TSPunctDelimiter = { guifg = colors.color7 },
+    TSPunctBracket = { guifg = colors.color7 },
+    TSPunctSpecial = { guifg = colors.color7 },
+    TSRepeat = { guifg = colors.color11 },
     TSString = { guifg = colors.color2 },
-    TSStringRegex = { guifg = colors.color7 }, -- For regexes.
-    TSStringEscape = { guifg = colors.color6 }, -- For escape characters within a string.
-    -- TSSymbol            = { };    -- For identifiers referring to symbols or atoms.
-    -- TSType              = { };    -- For types.
-    -- TSTypeBuiltin       = { };    -- For builtin types.
-    TSVariableBuiltin = { guifg = colors.color1 }, -- Variable names that are defined by the languages, like `this` or `self`.
-
-    -- TSTag               = { };    -- Tags like html tag names.
-    -- TSTagDelimiter      = { };    -- Tag delimiter like `<` `>` `/`
-    -- TSText              = { };    -- For strings considered text in a markup language.
+    TSStringRegex = { guifg = colors.color2 },
+    TSStringEscape = { guifg = colors.color4 },
+    TSStringSpecial = { guifg = colors.color4 },
+    TSSymbol = { guifg = colors.color1 },
+    TSTag = { guifg = colors.color4 },
+    TSTagAttribute = { guifg = colors.color1 },
+    TSTagDelimiter = { guifg = colors.color7 },
+    TSText = { guifg = colors.color7 },
+    TSStrong = { guifg = colors.color7 },
+    TSEmphasis = { guifg = colors.color7 }, -- italic
+    TSUnderline = { guifg = colors.color5 },
+    TSStrike = { guifg = colors.color7 },
+    TSTitle = { guifg = colors.color3 },
+    TSLiteral = { guifg = colors.color2 },
+    TSURI = { guifg = colors.color3 },
+    TSMath = { guifg = colors.color6 },
     TSTextReference = { guifg = colors.color6 },
-    -- TSEmphasis          = { };    -- For text to be represented with emphasis.
-    -- TSUnderline         = { };    -- For text to be represented with an underline.
-    -- TSStrike            = { };    -- For strikethrough text.
-    -- TSTitle             = { };    -- Text that is part of a title.
-    -- TSLiteral           = { };    -- Literal text.
-    -- TSURI               = { };    -- Any URI like a link or email.
+    TSEnvirontment = { guifg = colors.color5 },
+    TSEnvironmentName = { guifg = colors.color3 },
+    TSNote = { guifg = colors.color8 },
+    TSWarning = { guifg = colors.color0, guibg = colors.color1 },
+    TSDanger = { guifg = colors.color8 },
+    TSType = { guifg = colors.color3 },
+    TSTypeBuiltin = { guifg = colors.color3 },
+    TSVariable = { guifg = colors.color7 },
+    TSVariableBuiltin = { guifg = colors.color4 },
 
     -- LspTrouble
     LspTroubleText = { guifg = colors.foreground },
