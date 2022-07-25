@@ -15,6 +15,7 @@ everblush.nvim is a port of everblush.vim but written in lua
 
 ## Screenshots
 
+NOTE: screenshot is outdated
 ![demonstration](./misc/demonstration.png)
 
 ## External Plugin Support
