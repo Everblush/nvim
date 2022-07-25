@@ -161,6 +161,12 @@ M.highlights_base = function (colors)
     TSVariable = { fg = colors.color7 },
     TSVariableBuiltin = { fg = colors.color4 },
 
+    -- Diagnostic
+    DiagnosticError = { fg = colors.color1 },
+    DiagnosticWarn = { fg = colors.color3 },
+    DiagnosticInfo = { fg = colors.color4 },
+    DiagnosticHint = { fg = colors.color2 },
+
     -- LspTrouble
     LspTroubleText = { fg = colors.foreground },
     LspTroubleCount = { fg = colors.color6, bg = colors.foreground },
