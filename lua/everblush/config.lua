@@ -32,9 +32,9 @@ M.highlights_base = function (colors)
     Visual = { bg = colors.color0, fg = colors.foreground },
     VisualNOS = { bg = colors.background },
     WarningMsg = { fg = colors.color3, bg = colors.background },
-    DiffAdd = { fg = colors.background, bg = colors.color4 },
-    DiffChange = { fg = colors.background, bg = colors.color5 },
-    DiffDelete = { fg = colors.background, bg = colors.color1 },
+    DiffAdd = { bg = colors.background, fg = colors.color4 },
+    DiffChange = { bg = colors.background, fg = colors.color5 },
+    DiffDelete = { bg = colors.background, fg = colors.color1 },
     QuickFixLine = { bg = colors.color2 },
     PmenuSbar = { bg = colors.background },
     PmenuThumb = { bg = colors.color2 },
@@ -190,10 +190,10 @@ M.highlights_base = function (colors)
     NeogitBranch = { fg = colors.color6 },
     NeogitRemote = { fg = colors.color6 },
     NeogitHunkHeader = { bg = colors.background, fg = colors.foreground },
-    NeogitHunkHeaderHighlight = { bg = colors.foreground, fg = colors.color7 },
+    NeogitHunkHeaderHighlight = { bg = colors.comment, fg = colors.color7 },
     NeogitDiffContextHighlight = { bg = colors.background, fg = colors.foreground },
-    NeogitDiffDeleteHighlight = { fg = colors.color1, bg = colors.color1 },
-    NeogitDiffAddHighlight = { fg = colors.color4, bg = colors.color4 },
+    NeogitDiffDeleteHighlight = { fg = colors.color1, bg = colors.background },
+    NeogitDiffAddHighlight = { fg = colors.color4, bg = colors.background },
 
     -- GitGutter
     GitGutterAdd = { fg = colors.color4 }, -- diff mode: Added line |diff.txt|
