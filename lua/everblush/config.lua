@@ -39,7 +39,7 @@ M.highlights_base = function (colors)
     PmenuSbar = { bg = colors.background },
     PmenuThumb = { bg = colors.color2 },
     MatchParen = { fg = colors.color4, bg = colors.background },
-    Cursor = { fg = colors.fomeground, bg = colors.cursor },
+    Cursor = { fg = colors.foreground, bg = colors.cursor },
     lCursor = { fg = colors.foreground, bg = colors.cursor },
     CursorIM = { fg = colors.foreground, bg = colors.cursor },
     TermCursor = { fg = colors.foreground, bg = colors.cursor },
