@@ -15,6 +15,10 @@ function M.highlight_all(colors, opts)
     hi(0, 'NvimTreeEndOfBufferNC', { bg = colors.contrast, fg = colors.contrast })
     hi(0, 'NvimTreeVertSplit', { fg = colors.background, bg = colors.background })
   end
+  local override = opts.override or {}
+  for group, properties in pairs(override) do
+    hi(0, group, properties)
+  end
 end
 
 return M
