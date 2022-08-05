@@ -1,3 +1,7 @@
+<div align="center">
+<img src="./assets/logo.png" height="200px" width="200px">
+</div> 
+
 <h2 align="center">Neovim Lua Colorscheme</h2>
 <p>
 <h4 align="center" <i>Everblush Lua Port for Neovim</i></h4>
