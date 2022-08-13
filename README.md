@@ -19,7 +19,7 @@ everblush.nvim is a port of everblush.vim but written in lua
 
 ## Screenshots
 
-![demonstration](./misc/demonstration.png)
+![demonstration](https://raw.githubusercontent.com/Everblush/assets/main/nvim/nvim.png)
 
 ## External Plugin Support
 
