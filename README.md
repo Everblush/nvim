@@ -92,5 +92,22 @@ local everblush = require('everblush.core')
 local colors = everblush.get_colors()
 ```
 
+## Overriding colors
+
+If you want to override and customize the colors for various parts of the theme check out the [config](/lua/everblush/config.lua) and override like so:
+
+```lua
+local colors = require('everblush.core').get_colors()
+
+require('everblush').setup({
+  override = {
+    CursorLineNr = { fg = colors.foreground },
+    LineNr = { fg = colors.comment },
+  },
+})
+```
+
+Any other colors can be overriden in a similar way.
+
 ## Credits 💝
 - [AlphaTechnolog](https://github.com/AlphaTechnolog).
