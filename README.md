@@ -83,6 +83,16 @@ lualine.setup {
 }
 ```
 
+## Set transparent background
+
+To disable background color use `transparent_background` option
+
+```lua
+local everblush = require('everblush')
+
+everblush.setup({ transparent_background = true })
+```
+
 ## Using the core to get the colors
 
 If you want to get the colors into a lua dictionary
