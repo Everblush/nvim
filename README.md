@@ -1,5 +1,5 @@
 <div align="center">
-<img src="./assets/logo.png" height="200px" width="200px">
+<img src="https://raw.githubusercontent.com/Everblush/assets/main/logo.png" height="200px" width="200px">
 </div> 
 
 <h2 align="center">Neovim Lua Colorscheme</h2>
