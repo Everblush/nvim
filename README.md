@@ -13,13 +13,33 @@
 <img src="https://img.shields.io/github/forks/Everblush/everblush.nvim?color=e74c4c&labelColor=1b2224&style=for-the-badge">
 </p>
 
-everblush.nvim is a port of everblush.vim but written in lua 
 
 > ** IMPORTANT NOTE **: You need the latest version of neovim to use this, because this is totally written in lua!
 
 ## Screenshots
+<div align="center">
+<img width="500px" height="500px" src="https://github.com/Everblush/assets/blob/main/nvim/nvim-output.png"> 
+</div> 
 
-![demonstration](https://raw.githubusercontent.com/Everblush/assets/main/nvim/nvim.png)
+<details>
+<summary>More Language Screenshots</summary>
+### Bash
+<img width="500px" height="500px" src="https://github.com/Everblush/assets/blob/main/nvim/nvim-shell.png?raw=true"> 
+<br>
+
+### Rust 
+<img width="500px" height="500px" src="https://github.com/Everblush/assets/blob/main/nvim/nvim-rust.png?raw=true">
+<br> 
+
+### Go 
+<img width="500px" height="500px" src="https://github.com/Everblush/assets/blob/main/nvim/nvim-go.png?raw=true">
+<br> 
+
+### css
+<img width="500px" height="500px" src="https://github.com/Everblush/assets/blob/main/nvim/nvim-css.png?raw=true">
+<br> 
+
+</details>
 
 ## External Plugin Support
 
@@ -53,15 +73,16 @@ Plug 'Everblush/everblush.nvim', { 'as': 'everblush' }
 
 ## Active theme
 
-To active the theme call this in your neovim config:
+- To active the theme call this in your neovim config:
 
+### Lua 
 ```lua
 local everblush = require('everblush')
 
 everblush.setup({ nvim_tree = { contrast = true } }) -- or use contrast = false to not apply contrast
 ```
 
-Or with vim script:
+### Vim script:
 
 ```vim
 colorscheme everblush
@@ -121,3 +142,4 @@ Any other colors can be overriden in a similar way.
 
 ## Credits 💝
 - [AlphaTechnolog](https://github.com/AlphaTechnolog).
+- ]Mangeshrex](https://github.com/Mangeshrex).
