@@ -18,7 +18,7 @@
 
 ## Screenshots
 <div align="center">
-<img width="600px" height="500px" src="https://github.com/Everblush/assets/blob/main/nvim/nvim-output.png"> 
+<img width="700px" height="500px" src="https://github.com/Everblush/assets/blob/main/nvim/nvim-output.png"> 
 </div> 
 
 <details>
