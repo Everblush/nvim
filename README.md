@@ -24,19 +24,19 @@
 <details>
 <summary>More Language Screenshots</summary>
 ### Bash
-<img width="500px" height="500px" src="https://github.com/Everblush/assets/blob/main/nvim/nvim-shell.png?raw=true"> 
+<img align="center" width="700px" height="500px" src="https://github.com/Everblush/assets/blob/main/nvim/nvim-shell.png?raw=true"> 
 <br>
 
 ### Rust 
-<img width="500px" height="500px" src="https://github.com/Everblush/assets/blob/main/nvim/nvim-rust.png?raw=true">
+<img align="center" width="700px" height="500px" src="https://github.com/Everblush/assets/blob/main/nvim/nvim-rust.png?raw=true">
 <br> 
 
 ### Go 
-<img width="500px" height="500px" src="https://github.com/Everblush/assets/blob/main/nvim/nvim-go.png?raw=true">
+<img align="center" width="700px" height="500px" src="https://github.com/Everblush/assets/blob/main/nvim/nvim-go.png?raw=true">
 <br> 
 
 ### css
-<img width="500px" height="500px" src="https://github.com/Everblush/assets/blob/main/nvim/nvim-css.png?raw=true">
+<img  align="center" width="700px" height="500px" src="https://github.com/Everblush/assets/blob/main/nvim/nvim-css.png?raw=true">
 <br> 
 
 </details>
