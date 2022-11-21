@@ -23,6 +23,7 @@
 
 <details>
 <summary>More Language Screenshots</summary>
+
 ### Bash
 <img align="center" width="700px" height="500px" src="https://github.com/Everblush/assets/blob/main/nvim/nvim-shell.png?raw=true"> 
 <br>
