@@ -8,6 +8,7 @@ function M.setup (opts)
   end
   local colors = core.get_colors()
   vim.opt.termguicolors = true
+  vim.g.colors_name = "everblush"
   highlights.highlight_all(colors, opts)
 end
 
