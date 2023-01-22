@@ -1,38 +1,30 @@
-local core = require('everblush.core')
-local colors = core.get_colors()
+local p = require('everblush.palette')
 
-local night = {}
-
-night.normal = {
-  a = { bg = colors.color2, fg = colors.background },
-  b = { bg = colors.background, fg = colors.color7 },
-  c = { bg = colors.background, fg = colors.foreground },
+return {
+    normal = {
+        a = { bg = p.color2, fg = p.background },
+        b = { bg = p.background, fg = p.color7 },
+        c = { bg = p.background, fg = p.foreground },
+    },
+    insert = {
+        a = { bg = p.color10, fg = p.background },
+        b = { bg = p.background, fg = p.color4 },
+    },
+    command = {
+        a = { bg = p.color1, fg = p.background },
+        b = { bg = p.background, fg = p.color5 },
+    },
+    visual = {
+        a = { bg = p.color6, fg = p.background },
+        b = { bg = p.background, fg = p.color6 },
+    },
+    replace = {
+        a = { bg = p.color1, fg = p.background },
+        b = { bg = p.background, fg = p.color11 },
+    },
+    inactive = {
+        a = { bg = p.background, fg = p.color7 },
+        b = { bg = p.background, fg = p.foreground, gui = 'bold' },
+        c = { bg = p.background, fg = p.foreground },
+    },
 }
-
-night.insert = {
-  a = { bg = colors.color10, fg = colors.background },
-  b = { bg = colors.background, fg = colors.color4 },
-}
-
-night.command = {
-  a = { bg = colors.color1, fg = colors.background },
-  b = { bg = colors.background, fg = colors.color5 },
-}
-
-night.visual = {
-  a = { bg = colors.color6, fg = colors.background },
-  b = { bg = colors.background, fg = colors.color6 },
-}
-
-night.replace = {
-  a = { bg = colors.color1, fg = colors.background },
-  b = { bg = colors.background, fg = colors.color11 },
-}
-
-night.inactive = {
-  a = { bg = colors.background, fg = colors.color7 },
-  b = { bg = colors.background, fg = colors.foreground, gui = "bold" },
-  c = { bg = colors.background, fg = colors.foreground },
-}
-
-return night

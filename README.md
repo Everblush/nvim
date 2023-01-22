@@ -1,146 +1,219 @@
 <div align="center">
-<img src="https://raw.githubusercontent.com/Everblush/assets/main/logo.png" height="200px" width="200px">
-</div> 
+    <img src="https://raw.githubusercontent.com/Everblush/assets/main/logo.png" height="200px" width="200px" alt="logo" />
+</div>
 
-<h2 align="center">Neovim Lua Colorscheme</h2>
-<p>
-<h4 align="center" <i>Everblush Lua Port for Neovim</i></h4>
+<h1 align="center">Everblush for <a href="https://github.com/neovim/neovim">Neovim</a></h1>
+
+<h4 align="center"><i>A dark, vibrant, and beautiful color scheme for Neovim</i></h4>
+
+<p align="center">
+    <a href="https://github.com/Everblush/nvim/stars"><img src="https://img.shields.io/github/stars/Everblush/nvim?color=e57474&labelColor=1e2528&style=for-the-badge"></a>
+    <a href="https://github.com/Everblush/nvim/issues"><img src="https://img.shields.io/github/issues/Everblush/nvim?color=67b0e8&labelColor=1e2528&style=for-the-badge"></a>
+    <a href="https://github.com/Everblush/nvim/blob/main/LICENSE"><img src="https://img.shields.io/static/v1?label=license&message=MIT&color=8ccf7e&labelColor=1e2528&style=for-the-badge"></a>
+    <a href="https://github.com/Everblush/nvim/network/members"><img src="https://img.shields.io/github/forks/Everblush/nvim?color=e5c76b&labelColor=1e2528&style=for-the-badge"></a>
 </p>
 
- <p align="center">
-<img src="https://img.shields.io/github/stars/Everblush/everblush.nvim?color=e5c76b&labelColor=22292b&style=for-the-badge">
-<img src="https://img.shields.io/static/v1?label=license&message=MIT&color=8ccf7e&labelColor=22292b&style=for-the-badge">
-<img src="https://img.shields.io/github/forks/Everblush/everblush.nvim?color=e74c4c&labelColor=1b2224&style=for-the-badge">
-</p>
+## Preview
 
-
-> ** IMPORTANT NOTE **: You need the latest version of neovim to use this, because this is totally written in lua!
-
-## Screenshots
 <div align="center">
-<img width="700px" height="500px" src="https://github.com/Everblush/assets/blob/main/nvim/nvim-output.png"> 
-</div> 
+    <img width="700px" height="500px" src="https://github.com/Everblush/assets/blob/main/nvim/nvim-output.png"> 
+</div>
 
 <details>
-<summary>More Language Screenshots</summary>
-
-### Bash
-<img align="center" width="700px" height="500px" src="https://github.com/Everblush/assets/blob/main/nvim/nvim-shell.png?raw=true"> 
-<br>
-
-### Rust 
-<img align="center" width="700px" height="500px" src="https://github.com/Everblush/assets/blob/main/nvim/nvim-rust.png?raw=true">
-<br> 
-
-### Go 
-<img align="center" width="700px" height="500px" src="https://github.com/Everblush/assets/blob/main/nvim/nvim-go.png?raw=true">
-<br> 
-
-### css
-<img  align="center" width="700px" height="500px" src="https://github.com/Everblush/assets/blob/main/nvim/nvim-css.png?raw=true">
-<br> 
-
+    <summary>More screenshots</summary>
+    <h4>Bash</h4>
+    <div align="center">
+        <img align="center" width="700px" height="500px" src="https://github.com/Everblush/assets/blob/main/nvim/nvim-shell.png?raw=true" />
+    </div>
+    <h4>Rust</h4>
+    <div align="center">
+        <img align="center" width="700px" height="500px" src="https://github.com/Everblush/assets/blob/main/nvim/nvim-rust.png?raw=true" />
+    </div>
+    <h4>Go</h4>
+    <div align="center">
+        <img align="center" width="700px" height="500px" src="https://github.com/Everblush/assets/blob/main/nvim/nvim-go.png?raw=true" />
+    </div>
+    <h4>CSS</h4>
+    <div align="center">
+        <img align="center" width="700px" height="500px" src="https://github.com/Everblush/assets/blob/main/nvim/nvim-css.png?raw=true" />
+    </div>
 </details>
-
-## External Plugin Support
-
-- Telescope
-- Nvim Tree
-- Tresitter
-- Lsp
-- Lsp saga
-- Coc
-- Bufferline
-- Illuminate
-- Diff
-- Git signs
-- Git gutter
-- Lualine
-- Ident-BlankLine
 
 ## Installation
 
-You can install this plugin with packer:
+### Neovim (0.8+)
 
+<details open>
+    <summary><h4><a href='https://neovim.io/doc/user/usr_05.html#05.5'>Neovim packages</a></h4></summary>
+
+If not already present, create the plugins directory as follows:<br>
+```sh
+mkdir -p $HOME/.config/nvim/pack/plugins/start
+```
+
+Clone this repository to the plugins directory as follows:<br>
+```sh
+git clone --depth=1 https://github.com/Everblush/nvim $HOME/.config/nvim/pack/plugins/start/everblush/
+```
+</details>
+
+<details open>
+    <summary><h4><a href='https://github.com/wbthomason/packer.nvim'>packer.nvim</a></h4></summary>
+
+Add the following lines to the `init.lua` file in the `packer` setup function:<br>
 ```lua
-use { 'Everblush/everblush.nvim', as = 'everblush' }
+{ 'Everblush/nvim', as = 'everblush' }
 ```
+</details>
 
-Or with vim-plug:
+<details open>
+    <summary><h4><a href='https://github.com/folke/lazy.nvim'>lazy.nvim</a></h4></summary>
 
-```vim
-Plug 'Everblush/everblush.nvim', { 'as': 'everblush' }
-```
-
-## Active theme
-
-- To active the theme call this in your neovim config:
-
-### Lua 
+Add the following lines to the `init.lua` file in the `lazy` setup function:<br>
 ```lua
-local everblush = require('everblush')
+{ 'Everblush/nvim', name = 'everblush' }
+```
+</details>
 
-everblush.setup({ nvim_tree = { contrast = true } }) -- or use contrast = false to not apply contrast
+### Vim (8.2+)
+
+<details open>
+    <summary><h4><a href='https://vimhelp.org/repeat.txt.html#packages'>Vim packages</a></h4></summary>
+
+If not already present, create the plugins directory as follows:<br>
+```sh
+mkdir -p $HOME/.vim/pack/plugins/start
 ```
 
-### Vim script:
+Clone this repository to the plugins directory as follows:<br>
+```sh
+git clone --depth=1 https://github.com/Everblush/nvim $HOME/.vim/pack/plugins/start/everblush/
+```
+</details>
 
+<details open>
+    <summary><h4><a href='https://github.com/junegunn/vim-plug'>vim-plug</a></h4></summary>
+
+Add the line `Plug Everblush/nvim` to your `vimrc` and install using the command `:PlugInstall`.
+</details>
+
+<details open>
+    <summary><h4><a href='https://github.com/tpope/vim-pathogen'>vim-pathogen</a></h4></summary>
+
+Clone the repository to your `RUNTIMEPATH` as follows:<br>
+```sh
+git clone --depth=1 https://github.com/Everblush/nvim $HOME/.vim/bundle/everblush/
+```
+
+Alternatively, add this repository as a `git` sub-module as follows:<br>
+```sh
+git submodule add git@github.com:Everblush/nvim.git $HOME/.vim/bundle/everblush/
+```
+</details>
+
+<details open>
+    <summary><h4><a href='https://github.com/VundleVim/Vundle.vim'>Vundle</a></h4></summary>
+
+Add the line `Plugin Everblush/nvim` to your `vimrc` and install using the command `:PluginInstall`.
+</details>
+
+## Usage
+
+### Lua
+
+Add this line to your `init.lua` file:<br>
+```lua
+vim.cmd('colorscheme everblush')
+```
+
+### Vimscript
+
+Add this line to your `init.vim` file (for Neovim) or `.vimrc` (for Vim):<br>
 ```vim
 colorscheme everblush
 ```
 
-> It will set automatically the `vim.opt.termguicolors` to true
+## Configuration
 
-## Activating lualine theme
-
-Place this in your lualine config:
+The default options shown below are automatically set when the colorscheme is applied. Refer to the examples for sample configuration changes, and add them to the `init.lua` file.<br>
 
 ```lua
-local lualine = require('lualine')
-
-lualine.setup {
-  options = {
-    theme = 'everblush',
-  },
-}
-```
-
-## Set transparent background
-
-To disable background color use `transparent_background` option
-
-```lua
-local everblush = require('everblush')
-
-everblush.setup({ transparent_background = true })
-```
-
-## Using the core to get the colors
-
-If you want to get the colors into a lua dictionary
-
-```lua
-local everblush = require('everblush.core')
-local colors = everblush.get_colors()
-```
-
-## Overriding colors
-
-If you want to override and customize the colors for various parts of the theme check out the [config](/lua/everblush/config.lua) and override like so:
-
-```lua
-local colors = require('everblush.core').get_colors()
-
 require('everblush').setup({
-  override = {
-    CursorLineNr = { fg = colors.foreground },
-    LineNr = { fg = colors.comment },
-  },
+
+    -- Default options
+    override = {},
+    transparent_background = false,
+    nvim_tree = {
+        contrast = false,
+    },
+
+    -- Configuration examples
+
+    -- Override the default highlights using Everblush or other colors
+    override = {
+        Normal = { fg = '#ffffff', bg = 'comment' },
+    },
+
+    -- Set transparent background
+    transparent_background = true,
+
+    -- Set contrast for nvim-tree highlights
+    nvim_tree = {
+        contrast = true,
+    },
 })
 ```
 
-Any other colors can be overriden in a similar way.
+## Integrations
 
-## Credits 💝
-- [AlphaTechnolog](https://github.com/AlphaTechnolog).
-- ]Mangeshrex](https://github.com/Mangeshrex).
+### [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
+
+**Lua**
+```lua
+require('lualine').setup({
+    options = { 'theme': 'everblush' }
+})
+```
+**VimScript**
+```vim
+lua << EOF
+require('lualine').setup({
+    options = { 'theme': 'everblush' }
+})
+EOF
+```
+
+### [lightline.vim](https://github.com/itchyny/lightline.vim)
+
+**Lua**
+```lua
+vim.g.lightline = {
+    'colorscheme' = 'everblush',
+}
+```
+
+**Vimscript**
+```vim
+let g:lightline = {'colorscheme': 'everblush'}
+```
+
+### Other integrations
+
+- [bufferline.nvim](https://github.com/akinsho/bufferline.nvim)
+- [gitsigns](https://github.com/lewis6991/gitsigns.nvim)
+- [indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim)
+- [lspsaga.nvim](https://github.com/glepnir/lspsaga.nvim)
+- [neogit](https://github.com/TimUntersberger/neogit)
+- [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
+- [nvim-tree.lua](https://github.com/nvim-tree/nvim-tree.lua)
+- [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
+- [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
+- [trouble.nvim](https://github.com/folke/trouble.nvim)
+- [vim-gitgutter](https://github.com/airblade/vim-gitgutter)
+- [vim-illuminate](https://github.com/RRethy/vim-illuminate)
+
+## Credits
+
+- [AlphaTechnolog](https://github.com/AlphaTechnolog)
+- [Mangeshrex](https://github.com/Mangeshrex)
+- [Prateek](https://github.com/prateektade)
