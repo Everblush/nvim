@@ -171,14 +171,14 @@ require('everblush').setup({
 **Lua**
 ```lua
 require('lualine').setup({
-    options = { 'theme': 'everblush' }
+    options = { 'theme' = 'everblush' }
 })
 ```
 **VimScript**
 ```vim
 lua << EOF
 require('lualine').setup({
-    options = { 'theme': 'everblush' }
+    options = { 'theme' = 'everblush' }
 })
 EOF
 ```
