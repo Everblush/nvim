@@ -58,20 +58,6 @@ Add the following lines to the `init.lua` file in the `lazy` setup function:<br>
 <h4><a href='https://github.com/junegunn/vim-plug'>vim-plug</a></h4>
 
 Add the line `Plug Everblush/nvim` to your `vimrc` and install using the command `:PlugInstall`.
-</details>
-
-<details open>
-    <summary><h4><a href='https://github.com/tpope/vim-pathogen'>vim-pathogen</a></h4></summary>
-
-Clone the repository to your `RUNTIMEPATH` as follows:<br>
-```sh
-git clone --depth=1 https://github.com/Everblush/nvim $HOME/.vim/bundle/everblush/
-```
-
-Alternatively, add this repository as a `git` sub-module as follows:<br>
-```sh
-git submodule add git@github.com:Everblush/nvim.git $HOME/.vim/bundle/everblush/
-```
 
 ## Usage
 
