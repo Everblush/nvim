@@ -41,58 +41,21 @@
 
 ## Installation
 
-### Neovim (0.8+)
-
-<details open>
-    <summary><h4><a href='https://neovim.io/doc/user/usr_05.html#05.5'>Neovim packages</a></h4></summary>
-
-If not already present, create the plugins directory as follows:<br>
-```sh
-mkdir -p $HOME/.config/nvim/pack/plugins/start
-```
-
-Clone this repository to the plugins directory as follows:<br>
-```sh
-git clone --depth=1 https://github.com/Everblush/nvim $HOME/.config/nvim/pack/plugins/start/everblush/
-```
-</details>
-
-<details open>
-    <summary><h4><a href='https://github.com/wbthomason/packer.nvim'>packer.nvim</a></h4></summary>
+<h4><a href='https://github.com/wbthomason/packer.nvim'>packer.nvim</a></h4>
 
 Add the following lines to the `init.lua` file in the `packer` setup function:<br>
 ```lua
 { 'Everblush/nvim', as = 'everblush' }
 ```
-</details>
 
-<details open>
-    <summary><h4><a href='https://github.com/folke/lazy.nvim'>lazy.nvim</a></h4></summary>
+<h4><a href='https://github.com/folke/lazy.nvim'>lazy.nvim</a></h4>
 
 Add the following lines to the `init.lua` file in the `lazy` setup function:<br>
 ```lua
 { 'Everblush/nvim', name = 'everblush' }
 ```
-</details>
 
-### Vim (8.2+)
-
-<details open>
-    <summary><h4><a href='https://vimhelp.org/repeat.txt.html#packages'>Vim packages</a></h4></summary>
-
-If not already present, create the plugins directory as follows:<br>
-```sh
-mkdir -p $HOME/.vim/pack/plugins/start
-```
-
-Clone this repository to the plugins directory as follows:<br>
-```sh
-git clone --depth=1 https://github.com/Everblush/nvim $HOME/.vim/pack/plugins/start/everblush/
-```
-</details>
-
-<details open>
-    <summary><h4><a href='https://github.com/junegunn/vim-plug'>vim-plug</a></h4></summary>
+<h4><a href='https://github.com/junegunn/vim-plug'>vim-plug</a></h4>
 
 Add the line `Plug Everblush/nvim` to your `vimrc` and install using the command `:PlugInstall`.
 </details>
@@ -109,13 +72,6 @@ Alternatively, add this repository as a `git` sub-module as follows:<br>
 ```sh
 git submodule add git@github.com:Everblush/nvim.git $HOME/.vim/bundle/everblush/
 ```
-</details>
-
-<details open>
-    <summary><h4><a href='https://github.com/VundleVim/Vundle.vim'>Vundle</a></h4></summary>
-
-Add the line `Plugin Everblush/nvim` to your `vimrc` and install using the command `:PluginInstall`.
-</details>
 
 ## Usage
 
