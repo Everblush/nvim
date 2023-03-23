@@ -266,7 +266,11 @@ function M.get(config)
         ["@lsp.type.variable"] = {}, -- use treesitter styles for regular variables
         ["@lsp.typemod.method.defaultLibrary"] = { link = "@function.builtin" },
         ["@lsp.typemod.function.defaultLibrary"] = { link = "@function.builtin" },
+        ["@lsp.typemod.operator.injected"] = { link = "@operator" },
+        ["@lsp.typemod.string.injected"] = { link = "@string" },
         ["@lsp.typemod.variable.defaultLibrary"] = { link = "@variable.builtin" },
+        ["@lsp.typemod.variable.injected"] = { link = "@variable" },
+
         -- telescope.nvim: https://github.com/nvim-telescope/telescope.nvim
         TelescopeBorder = { fg = p.color0, bg = background },
         TelescopeNormal = { fg = p.foreground, bg = background },
