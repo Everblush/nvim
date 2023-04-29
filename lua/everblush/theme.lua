@@ -255,6 +255,22 @@ function M.get(config)
         ["@variable"] = { fg = p.color7 },
         ["@variable.builtin"] = { fg = p.color4 },
 
+        -- LSP semantic tokens
+        ["@lsp.type.comment"] = { link = "@comment" },
+        ["@lsp.type.enum"] = { link = "@type" },
+        ["@lsp.type.interface"] = { link = "Identifier" },
+        ["@lsp.type.keyword"] = { link = "@keyword" },
+        ["@lsp.type.namespace"] = { link = "@namespace" },
+        ["@lsp.type.parameter"] = { link = "@parameter" },
+        ["@lsp.type.property"] = { link = "@property" },
+        ["@lsp.type.variable"] = {}, -- use treesitter styles for regular variables
+        ["@lsp.typemod.method.defaultLibrary"] = { link = "@function.builtin" },
+        ["@lsp.typemod.function.defaultLibrary"] = { link = "@function.builtin" },
+        ["@lsp.typemod.operator.injected"] = { link = "@operator" },
+        ["@lsp.typemod.string.injected"] = { link = "@string" },
+        ["@lsp.typemod.variable.defaultLibrary"] = { link = "@variable.builtin" },
+        ["@lsp.typemod.variable.injected"] = { link = "@variable" },
+
         -- telescope.nvim: https://github.com/nvim-telescope/telescope.nvim
         TelescopeBorder = { fg = p.color0, bg = background },
         TelescopeNormal = { fg = p.foreground, bg = background },
