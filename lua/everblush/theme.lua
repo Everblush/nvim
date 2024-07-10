@@ -12,7 +12,7 @@ function M.get(config)
         -- base highlights
         Boolean = { fg = p.color5 },
         Character = { fg = p.color12 },
-        ColorColumn = { bg = p.color1 },
+        ColorColumn = { bg = p.color0 },
         Comment = { fg = p.comment, italic = true },
         Conceal = { fg = p.color4, bg = background },
         Conditional = { fg = p.color6 },
