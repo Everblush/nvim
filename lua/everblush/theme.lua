@@ -1,7 +1,7 @@
 local M = {}
 
 function M.get(config)
-    local p = require('everblush.palette')
+    local p = require("everblush.palette")
 
     local theme = {}
 
@@ -12,7 +12,7 @@ function M.get(config)
         -- base highlights
         Boolean = { fg = p.color5 },
         Character = { fg = p.color12 },
-        ColorColumn = { bg = background },
+        ColorColumn = { bg = p.color0 },
         Comment = { fg = p.comment, italic = true },
         Conceal = { fg = p.color4, bg = background },
         Conditional = { fg = p.color6 },
@@ -73,10 +73,10 @@ function M.get(config)
         SpecialChar = { fg = p.foreground },
         SpecialComment = { fg = p.color2 },
         SpecialKey = { fg = p.color4 },
-        SpellBad = { fg = p.color2 },
-        SpellCap = { fg = p.color6 },
-        SpellLocal = { fg = p.color4 },
-        SpellRare = { fg = p.color6 },
+        SpellBad = { fg = p.color9, underline = true },
+        SpellCap = { fg = p.color11, underline = true },
+        SpellLocal = { fg = p.color10, underline = true },
+        SpellRare = { fg = p.color6, underline = true },
         Statement = { fg = p.color6 },
         StatusLine = { fg = foreground, bg = background },
         StatusLineNC = { bg = background, fg = p.background },
@@ -274,7 +274,7 @@ function M.get(config)
         -- telescope.nvim: https://github.com/nvim-telescope/telescope.nvim
         TelescopeBorder = { fg = p.color0, bg = background },
         TelescopeNormal = { fg = p.foreground, bg = background },
-        TelescopeSelection = { fg = p.background, bg = p.color5 },
+        TelescopeSelection = { fg = p.foreground, bg = p.cursorline },
 
         -- trouble.nvim: https://github.com/folke/trouble.nvim
         LspTroubleCount = { fg = p.color6, bg = p.foreground },
@@ -312,4 +312,3 @@ function M.get(config)
 end
 
 return M
-
