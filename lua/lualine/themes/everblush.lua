@@ -1,4 +1,4 @@
-local p = require('everblush.palette')
+local p = require("everblush.palette")
 
 return {
     normal = {
@@ -24,7 +24,7 @@ return {
     },
     inactive = {
         a = { bg = p.background, fg = p.color7 },
-        b = { bg = p.background, fg = p.foreground, gui = 'bold' },
+        b = { bg = p.background, fg = p.foreground, gui = "bold" },
         c = { bg = p.background, fg = p.foreground },
     },
 }

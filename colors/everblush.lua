@@ -1,3 +1,3 @@
-package.loaded['everblush.palette'] = nil
+package.loaded["everblush.palette"] = nil
 
-require('everblush').colorscheme()
+require("everblush").colorscheme()
