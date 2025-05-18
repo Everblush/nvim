@@ -289,6 +289,11 @@ function M.get(config)
         -- vim-illuminate: https://github.com/RRethy/vim-illuminate
         illuminatedCurWord = { bg = p.foreground },
         illuminatedWord = { bg = p.foreground },
+                
+        -- flash.nvim: https://github.com/folke/flash.nvim
+		FlashCurrent = { bg = p.color1 },
+		FlashLabel = { fg = p.background, bg = p.color3 },
+
     }
 
     vim.g.terminal_color_0 = p.color0
